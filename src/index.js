@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Letreiro from './Letreiro';
-import Relogio from './Relogio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Letreiro/>
-    <Relogio/>
+    <App />
   </React.StrictMode>
 );
 

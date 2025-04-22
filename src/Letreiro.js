@@ -1,4 +1,3 @@
-import './Letreiro.css';
 import { useEffect } from "react";
 
 export default function Letreiro() {
