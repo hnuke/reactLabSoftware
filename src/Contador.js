@@ -1,14 +1,16 @@
 import {useState} from 'react';
 
-export default function Contador(props){
+export default function Contador({title, countTotal, OnStateChanged}){
     const [count, setCount] = useState(0);
 
     function add(){
         setCount(count + 1);
+        OnStateChanged(1)
     }
 
     function sub(){
         setCount(count - 1);
+        OnStateChanged(-1)
     }
 
     return (
@@ -17,8 +19,11 @@ export default function Contador(props){
 
             <button onClick={add}> Add </button>
             <button onClick={sub}> Sub </button>
-            <p>{props.title}</p>
+
+
+            <p>{title}</p>
             <p>{count}</p>
         </div>
     );
 }
+
