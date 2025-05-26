@@ -3,6 +3,7 @@ import ButtonEvent, { GenericButton } from "./Atv04/ButtonEvent.js" ;
 import {AlertButton} from './Atv04/ButtonEvent.js';
 import List from "./Atv04/List.js";
 import "./Atv04/atv04.css";
+import Form from "./Atv04/Form.js"
 export default function Atv04(){
     function SaySomething(Something){
         alert(Something);
@@ -17,6 +18,7 @@ export default function Atv04(){
             </AlertButton>
             <GenericButton handleClick={SaySomething} alertMessage={"Hellluu"}/>
             <List/>
+            <Form/>
         </div>
     );
 }
